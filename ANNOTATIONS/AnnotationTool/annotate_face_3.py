@@ -30,7 +30,7 @@ from matplotlib import pyplot as plt
 from matplotlib.widgets import Button
 import matplotlib.cbook
 from imutils import paths
-warnings.filterwarnings('ignore', category=matplotlib.cbook.mplDeprecation)
+#warnings.filterwarnings('ignore', category=matplotlib.cbook.mplDeprecation)
 
 def enum(**enums):
     return type('Enum', (), enums)
@@ -1219,7 +1219,8 @@ def main(args):
 
 
 if __name__ == '__main__':
-    f_winner = open(r"D:\AnnotationTool\landmark_output.json", 'r+')
+    f_winner = open(r"C:\Users\Shrinjita Paul\Documents\GitHub\ImgCap\ANNOTATIONS\AnnotationTool\landmark_output.json", 'r+')
     f_data = json.load(f_winner)
     main(parse_arguments())
     f_winner.close()
+    

@@ -28,8 +28,8 @@ def batch_convert(directory, output_directory):
 
 def main():
     parser = argparse.ArgumentParser(description="Convert HEIC images to JPG format")
-    parser.add_argument("input_directory", help="Path to the directory containing HEIC images")
-    parser.add_argument("output_directory", help="Path for the output JPG images")
+    parser.add_argument("input_directory", help=r"C:\\Users\\Shrinjita Paul\\Documents\\GitHub\\ImgCap\\ANNOTATIONS\\AnnotationTool\\img_new")
+    parser.add_argument("output_directory", help=r"C:\\Users\\Shrinjita Paul\\Documents\\GitHub\\ImgCap\\ANNOTATIONS\\sp7112\\jpg")
     args = parser.parse_args()
 
     batch_convert(args.input_directory, args.output_directory)
